@@ -34,6 +34,8 @@ submit.addEventListener("click", function () {
     myCard.style.cssText = "transform:rotateY(180deg);"
     //create the p
     let rates = document.createElement("p")
+    //on default if the user didnt choose any number
+    rates.textContent = `You selected 0 out of 5`
     //function to dynamiclly get the number clicked
     spans.forEach(function (span) {
         if (span.classList.contains("active")){
